@@ -1,9 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const GsapTo = () => {
+const GsapFrom = () => {
   useGSAP(() => {
-    gsap.to("#blue-box", {
+    gsap.from("#green-box", {
       x: 200,
       repeat: -1,
       yoyo: true,
@@ -15,10 +15,10 @@ const GsapTo = () => {
 
   return (
     <div className="space-y-5">
-      <div>GsapTo</div>
-      <div id="blue-box" className="w-20 h-20 bg-blue-500 rounded-lg"></div>
+      <div>GsapFrom</div>
+      <div id="green-box" className="w-20 h-20 bg-green-500 rounded-lg"></div>
     </div>
   );
 };
 
-export default GsapTo;
+export default GsapFrom;
