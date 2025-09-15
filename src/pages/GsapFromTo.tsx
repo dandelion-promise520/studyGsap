@@ -14,7 +14,7 @@ const GsapFromTo = () => {
         x: 200,
         repeat: -1,
         yoyo: true,
-        duration: 1,
+        duration: 1.2,
         ease: "power1.inOut",
         borderRadius: "100%",
         rotation: 360,

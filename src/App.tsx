@@ -1,5 +1,7 @@
 import GsapFrom from "./pages/Gsapfrom";
 import GsapFromTo from "./pages/GsapFromTo";
+import GsapStagger from "./pages/GsapStagger";
+import GsapTimeLine from "./pages/GsapTimeLine";
 import GsapTo from "./pages/GsapTo";
 
 const App = () => {
@@ -8,6 +10,8 @@ const App = () => {
       <GsapTo />
       <GsapFrom />
       <GsapFromTo />
+      <GsapTimeLine />
+      <GsapStagger />
     </div>
   );
 };
