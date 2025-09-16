@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+/* 隐藏滚动条但保持元素可滚动 */
+@utility no-scrollbar {
+  /* 针对 Chrome, Safari 和 Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* 针对 IE, Edge 和 Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

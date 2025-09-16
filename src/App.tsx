@@ -1,17 +1,25 @@
-import GsapFrom from "./pages/Gsapfrom";
+import GsapFrom from "./pages/GsapFrom";
 import GsapFromTo from "./pages/GsapFromTo";
+import GsapScrollTrigger from "./pages/GsapScrollTrigger";
 import GsapStagger from "./pages/GsapStagger";
+import GsapText from "./pages/GsapText";
 import GsapTimeLine from "./pages/GsapTimeLine";
 import GsapTo from "./pages/GsapTo";
 
 const App = () => {
   return (
-    <div className="space-y-10 mt-10 ml-10">
+    <div className="mt-10 ml-10 space-y-10 overflow-y-hidden no-scrollbar">
       <GsapTo />
       <GsapFrom />
       <GsapFromTo />
       <GsapTimeLine />
-      <GsapStagger />
+      <div className="mb-[260px]">
+        <GsapStagger />
+      </div>
+      <div className="mb-[260px]">
+        <GsapScrollTrigger />
+      </div>
+      <GsapText />
     </div>
   );
 };
